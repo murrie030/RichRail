@@ -1,0 +1,42 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button {
+	-fx-background-color: #3867d6;
+	-fx-font-family: 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif';
+	-fx-text-fill: white;
+}
+
+.combo-box {
+	-fx-border-width: 0.5px;
+	-fx-border-radius: 50px;
+	-fx-background-radius: 50px;
+	-fx-background-color: #f1c40f;
+	-fx-font-size: 14px;
+	-fx-font-family: 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif';
+	-fx-padding: 0px;
+	-fx-text-fill: white;
+}
+
+#commandview2 {
+    -fx-font-family: Consolas;
+    -fx-font-size: 15;
+    -fx-text-fill: #32ff7e;
+    -fx-display-caret:true;
+}
+
+#commandview2 .content {
+    -fx-background-color: #000000;
+}
+
+.label {
+	-fx-font-family: 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif';
+}
+
+.text-field {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.text-field:focused {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}

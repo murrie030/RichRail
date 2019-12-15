@@ -1,0 +1,5 @@
+Train with id Locomtive3 has been created.
+Wagon with name Locomtive3 has been created.
+This train does not exist.
+This train does not exist.
+This train does not exist.

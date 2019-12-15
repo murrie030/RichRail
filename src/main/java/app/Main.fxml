@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="787.0" prefWidth="1246.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.MainController">
+   <bottom>
+      <DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="796.0" prefWidth="1208.0" BorderPane.alignment="CENTER">
+          <content>
+            <AnchorPane prefHeight="726.0" prefWidth="1250.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="63.0" text="Create new locomotive">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="id" layoutX="20.0" layoutY="85.0" prefHeight="26.0" prefWidth="160.0" promptText="Name" />
+                  <Pane layoutX="468.0" layoutY="24.0" prefHeight="292.0" prefWidth="709.0">
+                     <children>
+                        <TextArea fx:id="trainview" editable="false" prefHeight="257.0" prefWidth="710.0" />
+                        <Label layoutY="257.0" text="The locomotives are all on the left, its attached wagons are on the right." />
+                        <Label layoutY="274.0" text="The wagons at the bottom have not yet been attached." />
+                     </children></Pane>
+                  <Label layoutX="17.0" layoutY="14.0" prefHeight="34.0" prefWidth="159.0" text="RichRail" textFill="#ffdd00">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="29.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="trainbtn" layoutX="20.0" layoutY="214.0" mnemonicParsing="false" onAction="#getTrainFields" prefHeight="31.0" prefWidth="116.0" text="Create" />
+                  <TextArea fx:id="commandview2" editable="false" layoutX="836.0" layoutY="318.0" prefHeight="263.0" prefWidth="341.0" />
+                  <Button layoutX="20.0" layoutY="360.0" mnemonicParsing="false" text="Delete " />
+                  <Label fx:id="selectedLocomotive" layoutX="20.0" layoutY="400.0" />
+                  <TextField fx:id="numseats" layoutX="20.0" layoutY="130.0" prefHeight="26.0" prefWidth="160.0" promptText="Num. seats" />
+                  <TextField fx:id="maxweight" layoutX="20.0" layoutY="175.0" prefHeight="26.0" prefWidth="160.0" promptText="Max. weight" />
+                  <ComboBox fx:id="locomotiveComboBox" layoutX="20.0" layoutY="320.0" onAction="#comboChanged" prefWidth="180.0" promptText="Select a locomotive" />
+                  <Label layoutX="275.0" layoutY="63.0" text="Create new wagon">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="command" layoutX="467.0" layoutY="588.0" prefHeight="35.0" prefWidth="219.0" promptText="Command" />
+                  <Button fx:id="wagonbtn" layoutX="275.0" layoutY="214.0" mnemonicParsing="false" onAction="#getWagonFields" prefHeight="31.0" prefWidth="116.0" text="Create" />
+                  <TextField fx:id="numseatswagon" layoutX="275.0" layoutY="130.0" prefHeight="26.0" prefWidth="160.0" promptText="Num. seats" />
+                  <TextField fx:id="maxweightwagon" layoutX="275.0" layoutY="175.0" prefHeight="26.0" prefWidth="160.0" promptText="Max. weight" />
+                  <Button layoutX="275.0" layoutY="360.0" mnemonicParsing="false" text="Delete" />
+                  <Label fx:id="selectedWagon" layoutX="275.0" layoutY="400.0" />
+                  <ComboBox fx:id="wagonComboBox" layoutX="275.0" layoutY="320.0" onAction="#comboChanged2" prefWidth="180.0" promptText="Select a wagon" />
+                  <Button layoutX="95.0" layoutY="490.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="287.0" text="Add wagon to locomotive" />
+                  <Button layoutX="95.0" layoutY="530.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="287.0" text="Remove wagon from locomotive" />
+                  <TextArea fx:id="commandview" editable="false" layoutX="467.0" layoutY="318.0" prefHeight="263.0" prefWidth="296.0" />
+                  <Button fx:id="executebtn" layoutX="691.0" layoutY="588.0" mnemonicParsing="false" onAction="#execute" prefHeight="35.0" prefWidth="72.0" text="Execute" />
+                  <TextField fx:id="idwagon" layoutX="275.0" layoutY="85.0" prefHeight="26.0" prefWidth="160.0" promptText="Name" />
+                  <Button fx:id="logger" layoutX="976.0" layoutY="588.0" mnemonicParsing="false" onAction="#logToFile" prefHeight="34.0" prefWidth="61.0" text="Log" />
+               </children></AnchorPane>
+          </content>
+          <expandableContent>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+          </expandableContent>
+      </DialogPane>
+   </bottom>
+</BorderPane>

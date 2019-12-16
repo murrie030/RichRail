@@ -168,6 +168,7 @@ public class MainController implements Initializable, Command{
 		commandview2.appendText("\n");
 		
 		addTrainName(event);
+		updateView();
 	}
 	
 	
@@ -196,6 +197,9 @@ public class MainController implements Initializable, Command{
 		command.execute(id.getText(), numseats2, maxweight2, "wagon");
 		commandview2.appendText(command.getFinalMessage());
 		commandview2.appendText("\n");
+		
+		addWagonName(event);
+		updateView();
 	}
 	
 	

@@ -8,4 +8,3 @@ We are Group 5, consisting of:
 * Sebastiaan Jansen - Back-end developer
 * Skott de Koster - Front-end developer
 * Mustafa Toprak - Full-stack developer
-Projectinfo 
